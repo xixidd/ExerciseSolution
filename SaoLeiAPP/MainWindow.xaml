@@ -1,0 +1,21 @@
+﻿<Window x:Class="SaoLeiAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+            <Viewbox Name="MyViewBox" Stretch="Fill" Width="450" Height="450" Grid.Row="1">
+            <WrapPanel Name="GameWrapPanel" Width="450"></WrapPanel>
+            </Viewbox>
+        <Menu Grid.RowSpan="2" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" >
+            <MenuItem Header="aa" DockPanel.Dock="Top">
+                <AccessText>1</AccessText>
+                <AccessText>2</AccessText>
+            </MenuItem>
+            <MenuItem Header="bb" ></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
